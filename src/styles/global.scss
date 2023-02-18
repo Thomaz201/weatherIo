@@ -1,0 +1,27 @@
+:root {
+  --blue: #06283D;
+  --blue-button: #dff6ff;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", "Roboto", sans-serif;;
+  background: var(--blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}

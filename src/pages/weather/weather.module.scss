@@ -1,0 +1,181 @@
+.container {
+  position: relative;
+  width: 500px;
+  height: 105px;
+  background-color: #fff;
+  padding: 28px 32px;
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  transition: 0.6s ease-out;
+
+  form {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      color: var(--blue);
+      width: 80%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-left: 32px;
+
+      &::placeholder {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--blue);
+        text-transform: capitalize;
+      }
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      color: var(--blue);
+      background-color: var(--blue-button);
+      border-radius: 50%;
+      transition: 0.4s ease;
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--blue);
+
+      }
+    }
+
+    i {
+      position: absolute;
+      color: var(--blue);
+    }
+  }
+}
+
+.containerWeather {
+  height: 705px; 
+}
+
+.containerWeatherNotFound {
+  height: 505px; 
+}
+
+.notFound {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+
+  img {
+    width: 70%;
+  }
+
+  p {
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+  }
+}
+
+.weatherBox {
+  text-align: center;
+  scale: 0;
+  opacity: 0;
+
+  img {
+    width: 60%;
+    margin-top: 30px;
+  }
+}
+
+.temperature {
+  position: relative;
+  color: var(--blue);
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+  text-transform: uppercase;
+
+  span {
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 16px;
+    font-size: 1.5rem;
+  }
+}
+
+.description {
+  color: var(--blue);
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.weatherDetails {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  scale: 0;
+  opacity: 0;
+
+  i {
+    color: var(--blue);
+  }
+
+  span {
+    color: var(--blue);
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  p {
+    color: var(--blue);
+    font-size: 0.85rem;
+    font-weight: 400;
+
+  }
+}
+
+.humidity, .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+.humidity {
+  padding-left: 10px;
+  justify-content: flex-start;
+}
+
+.wind {
+  padding-right: 10px;
+  justify-content: flex-end;
+}
+
+.text {
+  p {
+    margin-left: 4px;
+    font-size: 1rem;
+  }
+}
+
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
